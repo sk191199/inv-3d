@@ -84,7 +84,7 @@ const Contact = () => {
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
             <FaMapMarkerAlt style={{ marginRight: 12, fontSize: 22 }} />
-            <Typography variant="body2">123, Main Street, Chennai, India</Typography>
+            <Typography variant="body2">49-18-25 (4th floor), Lalitha Nagar, Akkayyapalem, Visakhapatnam, India</Typography>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
             <FaEnvelope style={{ marginRight: 12, fontSize: 20 }} />
@@ -95,16 +95,16 @@ const Contact = () => {
             <Typography variant="body2">+91 9248200200</Typography>
           </Box>
           <Box sx={{ mt: 3 }}>
-            <IconButton component="a" href="https://facebook.com" target="_blank" sx={{ color: '#fff', mx: 0.5 }}>
+            <IconButton component="a" href="https://www.facebook.com/groups/322489371290099/?mibextid=6NoCDW" target="_blank" sx={{ color: '#fff', mx: 0.5 }}>
               <FaFacebook />
             </IconButton>
-            <IconButton component="a" href="https://instagram.com" target="_blank" sx={{ color: '#fff', mx: 0.5 }}>
+            <IconButton component="a" href="https://www.instagram.com/tecknoloz_invtechbytes/" target="_blank" sx={{ color: '#fff', mx: 0.5 }}>
               <FaInstagram />
             </IconButton>
-            <IconButton component="a" href="https://linkedin.com" target="_blank" sx={{ color: '#fff', mx: 0.5 }}>
+            <IconButton component="a" href="https://www.linkedin.com/in/inv-technologies-489024114/" target="_blank" sx={{ color: '#fff', mx: 0.5 }}>
               <FaLinkedin />
             </IconButton>
-            <IconButton component="a" href="https://twitter.com" target="_blank" sx={{ color: '#fff', mx: 0.5 }}>
+            <IconButton component="a" href="https://x.com/TechnologiesInv" target="_blank" sx={{ color: '#fff', mx: 0.5 }}>
               <FaTwitter />
             </IconButton>
           </Box>

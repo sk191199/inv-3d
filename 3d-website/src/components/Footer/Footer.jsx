@@ -26,16 +26,16 @@ const Footer = () => {
             Leading provider of 3D printing services, delivering high-quality prototypes and models for all industries.
           </Typography>
           <Box sx={{ mt: 2 }}>
-            <IconButton component="a" href="https://facebook.com" target="_blank" sx={{ color: '#fff' }}>
+            <IconButton component="a" href="https://www.facebook.com/groups/322489371290099/?mibextid=6NoCDW" target="_blank" sx={{ color: '#fff' }}>
               <FaFacebook />
             </IconButton>
-            <IconButton component="a" href="https://instagram.com" target="_blank" sx={{ color: '#fff' }}>
+            <IconButton component="a" href="https://www.instagram.com/tecknoloz_invtechbytes/" target="_blank" sx={{ color: '#fff' }}>
               <FaInstagram />
             </IconButton>
-            <IconButton component="a" href="https://linkedin.com" target="_blank" sx={{ color: '#fff' }}>
+            <IconButton component="a" href="https://www.linkedin.com/in/inv-technologies-489024114/" target="_blank" sx={{ color: '#fff' }}>
               <FaLinkedin />
             </IconButton>
-            <IconButton component="a" href="https://twitter.com" target="_blank" sx={{ color: '#fff' }}>
+            <IconButton component="a" href="https://x.com/TechnologiesInv" target="_blank" sx={{ color: '#fff' }}>
               <FaTwitter />
             </IconButton>
           </Box>
@@ -48,7 +48,7 @@ const Footer = () => {
             <Link href="#hero" underline="hover" color="inherit">Home</Link>
             <Link href="#about" underline="hover" color="inherit">About</Link>
             <Link href="#designs" underline="hover" color="inherit">Designs</Link>
-            <Link href="/" underline="hover" color="inherit">Products</Link>
+            <Link href="#contact" underline="hover" color="inherit">Contact</Link>
           </Box>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
@@ -57,7 +57,7 @@ const Footer = () => {
           </Typography>
           <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
             <FaMapMarkerAlt style={{ marginRight: 8 }} />
-            <Typography variant="body2">123, Main Street, Chennai, India</Typography>
+            <Typography variant="body2">49-18-25 (4th floor), Lalitha Nagar, <br /> Akkayyapalem,Visakhapatnam, India</Typography>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
             <FaEnvelope style={{ marginRight: 8 }} />
@@ -65,7 +65,7 @@ const Footer = () => {
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <FaPhone style={{ marginRight: 8 }} />
-            <Typography variant="body2">+91 98765 43210</Typography>
+            <Typography variant="body2">+91 9248200200</Typography>
           </Box>
         </Grid>
       </Grid>

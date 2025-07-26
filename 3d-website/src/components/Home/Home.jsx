@@ -20,7 +20,7 @@ const Home = () => {
             </div>
         </div>
         <div className='top-navigation'>
-              <a href="#hero" style={{textDecoration:"none"}}><FaRegArrowAltCircleUp fontSize={40} color='orange'/></a>
+              <a href="#hero" style={{textDecoration:"none"}}><FaRegArrowAltCircleUp fontSize={40} /></a>
         </div>
     </div>
     </section>

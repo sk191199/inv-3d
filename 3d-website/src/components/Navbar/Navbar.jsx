@@ -10,7 +10,7 @@ const Navbar = () => {
         <ul className='menu-list'>
           <li><a href="https://invtechnologies.in/" style={{textDecoration:"none"}}>Home</a></li>
           <li><a href="#about" style={{textDecoration:"none" }}>About</a></li>
-          <li><a href="/" style={{textDecoration:"none" }}>Products</a></li>
+          <li><a href="#other-designs" style={{textDecoration:"none" }}>Products</a></li>
           <li><a href="#contact" style={{textDecoration:"none" }}>Contact</a></li>
         </ul>
       </Box>

@@ -3,10 +3,9 @@ import { Box, Typography, Grid, Card, CardMedia, CardContent } from '@mui/materi
 import { FaRobot, FaFont, FaCubes } from 'react-icons/fa'
 import './Other.css'
 
-// Example images (replace with your own assets for production)
-import text3d from '../../asset/d1.png'
-import robo3d from '../../asset/d2.png'
-import macro3d from '../../asset/d3.png'
+import text3d from '../../asset/inv-text.png'
+import robo3d from '../../asset/robot-3d.png'
+import macro3d from '../../asset/micro3d.png'
 
 const categories = [
   {
@@ -32,53 +31,117 @@ const categories = [
 const Other = () => {
   return (
     <section id="other-designs">
-      <Box className="other-root">
-        <Typography variant="h3" className="other-title" sx={{ fontFamily: 'Poppins', fontWeight: 'bold', mb: 2 }}>
+      <Box className="other-root" sx={{
+        minHeight: '100vh',
+        background: 'linear-gradient(120deg, #fdfbfb 0%, #a79dd1 100%)',
+        py: { xs: 4, md: 8 },
+        px: { xs: 1, md: 3 },
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+      }}>
+        <Typography variant="h3" className="other-title" sx={{
+          fontFamily: 'Poppins',
+          fontWeight: 'bold',
+          mb: 2,
+          textAlign: 'center',
+          color: '#584899'
+        }}>
           Explore Unique 3D Printed Designs
         </Typography>
-        <Typography variant="h6" className="other-subtitle" sx={{ mb: 5, color: '#584899', fontFamily: 'Poppins' }}>
+        <Typography variant="h6" className="other-subtitle" sx={{
+          mb: 5,
+          color: '#584899',
+          fontFamily: 'Poppins',
+          textAlign: 'center',
+          maxWidth: 700
+        }}>
           From personalized text to futuristic robots and everything in between, discover our never-seen-before 3D creations.
         </Typography>
-        <Grid container spacing={4} justifyContent="center">
+        <Grid container spacing={4} justifyContent="center" alignItems="stretch">
           {categories.map((cat, idx) => (
-            <Grid item xs={12} sm={6} md={4} key={cat.title}>
-              <Card className="other-card" sx={{
-                borderRadius: 5,
-                boxShadow: '0 8px 32px 0 rgba(71,211,111,0.12)',
-                background: 'linear-gradient(135deg, #fff 60%, #f7d24a10 100%)',
-                transition: 'transform 0.3s',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                '&:hover': {
-                  transform: 'scale(1.04) rotate(-1deg)',
-                  boxShadow: '0 12px 40px 0 rgba(88,72,153,0.18)',
-                }
-              }}>
-                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', pt: 3 }}>
+            <Grid item xs={12} sm={6} md={4} key={cat.title} sx={{ display: 'flex' }}>
+              <Card className="other-card"
+                sx={{
+                  borderRadius: 6,
+                  boxShadow: '0 8px 32px 0 rgba(71,211,111,0.12)',
+                  background: 'linear-gradient(135deg, #fff 60%, #f7d24a10 100%)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'flex-start',
+                  width: '100%',
+                  minHeight: 480,
+                  transition: 'transform 0.3s, box-shadow 0.3s',
+                  padding: 0,
+                }}>
+                <Box sx={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  pt: 4,
+                  width: '100%',
+                  minHeight: 60
+                }}>
                   {cat.icon}
                 </Box>
-                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
+                <Box
+                  sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    width: '100%',
+                    minHeight: { xs: 180, md: 220 },
+                    px: 2,
+                  }}
+                >
                   <CardMedia
                     component="img"
                     image={cat.image}
                     alt={cat.title}
                     sx={{
-                      height: { xs: 180, md: 220 },
-                      width: { xs: 220, md: 260 },
+                      height: { xs: 140, md: 180 },
+                      width: 'auto',
+                      maxWidth: '80%',
                       objectFit: 'contain',
                       borderRadius: 4,
-                      my: 2,
                       boxShadow: '0 4px 24px rgba(71,211,111,0.08)',
-                      background: '#f7f7fa'
+                      background: '#f7f7fa',
+                      mx: 'auto',
+                      display: 'block',
                     }}
                   />
                 </Box>
-                <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <Typography variant="h5" sx={{ fontWeight: 'bold', fontFamily: 'Poppins', mb: 1, color: '#584899', textAlign: 'center' }}>
+                <CardContent
+                  sx={{
+                    flexGrow: 1,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'flex-start',
+                    width: '100%',
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      fontWeight: 'bold',
+                      fontFamily: 'Poppins',
+                      mb: 1,
+                      color: '#584899',
+                      textAlign: 'center',
+                    }}
+                  >
                     {cat.title}
                   </Typography>
-                  <Typography variant="body1" sx={{ color: '#333', fontFamily: 'Poppins', textAlign: 'center' }}>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      color: '#333',
+                      fontFamily: 'Poppins',
+                      textAlign: 'center',
+                    }}
+                  >
                     {cat.desc}
                   </Typography>
                 </CardContent>
