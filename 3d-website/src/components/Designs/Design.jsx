@@ -12,6 +12,7 @@ import img8 from '../../asset/d8.png'
 import img9 from '../../asset/d9.png'
 import Typography from '@mui/material/Typography'
 
+
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9]
 
 const Design = () => {
@@ -22,15 +23,16 @@ const Design = () => {
     const interval = setInterval(() => {
       angle += 1
       if (sliderRef.current) {
-        sliderRef.current.style.transform = `perspective(1000px) rotateY(${angle}deg)`
+        sliderRef.current.style.transform = `perspective(1000px)  rotateY(${angle}deg)`
       }
     }, 60)
     return () => clearInterval(interval)
   }, [])
 
   return (
-    <section id="designs" style={{marginTop:"2.5rem", padding:"2rem"}}>
+    <section id="designs" style={{marginTop:"2.5rem", padding:"2rem"}} className='designs'>
       <Typography variant="h4" color="initial" sx={{textAlign:"center", fontFamily:"Poppins", fontWeight:"bold"}}>Our Designs</Typography>
+      <Typography variant="h6" color="initial" sx={{textAlign:"center", marginTop:"5px"}}>We can design all kinds of 3D Models ranging from Mini to Huge in PLA, ABS, TPU and PETG Materials</Typography>
       <div className='banner'>
         <div className='slider' ref={sliderRef}>
           {images.map((img, i) => (
