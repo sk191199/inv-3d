@@ -70,7 +70,7 @@ const Footer = () => {
         </Grid>
       </Grid>
       <Box sx={{ textAlign: 'center', mt: 4, opacity: 0.7, fontSize: 14 }}>
-        © {new Date().getFullYear()} INV Technologies. All rights reserved.
+        © 2015-2025 Discipline . All Rights Reserved | Design by INV Technologies
       </Box>
     </Box>
   )
