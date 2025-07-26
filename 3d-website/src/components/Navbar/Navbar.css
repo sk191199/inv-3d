@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 5px;
+    animation: navbarFadeIn 1s ease-out;
+
+}
+
+.navbar-box {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    background-color: black;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.menu-list li a {
+    transition: color 0.3s, transform 0.3s;
+    color: #fff;
+}
+.menu-list li a:hover {
+    color: #47d36f;
+    transform: scale(1.1);
+}
+
+@keyframes navbarFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-box {
+        width: 330px;
+        max-width: 100%;
+    }
+}
