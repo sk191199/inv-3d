@@ -1,13 +1,16 @@
 import React from 'react'
 import "./Home.css"
-import Typography from '@mui/material/Typography'
+
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
+import logo from "../../asset/invicon.png"
 
 const Home = () => {
   return (
+    <section id='hero'>
     <div className='home-container'>
         <div className='main-container'>
-            <div className='square-container' style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent:"center"}}>
-                <Typography variant="h1" color="#fff" sx={{fontFamily:"poppins"}} >3D</Typography>
+            <div className='square-container' style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent:"center", padding:"10px"}}>
+                <img src={logo} alt="" style={{width:"100%"}} />
             </div>
             <div className='text-container'>
                 <h4 className='text'>3D Printing Service</h4>
@@ -15,9 +18,12 @@ const Home = () => {
             <div className='circle-container'>
 
             </div>
-
+        </div>
+        <div className='top-navigation'>
+              <a href="#hero" style={{textDecoration:"none"}}><FaRegArrowAltCircleUp fontSize={40} color='orange'/></a>
         </div>
     </div>
+    </section>
   )
 }
 

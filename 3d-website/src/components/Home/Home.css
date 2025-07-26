@@ -105,6 +105,15 @@
     text-align: center;
 }
 
+.top-navigation{
+    text-align: center;
+    position: fixed;
+    bottom: 4px;
+    right: 10px;
+    z-index: 1000;
+    align-self: flex-end;
+}
+
 /* Responsive styles for tablet */
 /* @media (max-width: 900px) {
     .main-container {
